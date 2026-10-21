@@ -2,262 +2,105 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>LIU Xinran · Personal Homepage</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LIU Xinran</title>
   <meta name="description" content="LIU Xinran — Computer Science student at The Chinese University of Hong Kong. Research interests in multimodal AI, GraphRAG, and optimization." />
   <meta name="author" content="LIU Xinran" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="noise" aria-hidden="true"></div>
+  <nav>
+    <ul class="menu">
+      <li><a href="#about">About</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#awards">Awards</a></li>
+      <li><a href="#activities">Activities</a></li>
+    </ul>
+    <hr />
+  </nav>
 
-  <header class="nav">
-    <a class="nav-brand" href="#top">LIU Xinran</a>
-    <nav class="nav-links" aria-label="Primary">
-      <a href="#about">About</a>
-      <a href="#education">Education</a>
-      <a href="#awards">Awards</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+  <main>
+    <a href="img/selfie.jpg"><img class="photo" src="img/selfie.jpg" alt="Photo of LIU Xinran" /></a>
+    <h1>LIU Xinran</h1>
 
-  <main id="top">
-    <section class="hero" aria-label="Introduction">
-      <div class="hero-visual" aria-hidden="true">
-        <div class="hero-orb hero-orb-a"></div>
-        <div class="hero-orb hero-orb-b"></div>
-        <div class="hero-grid"></div>
-        <svg class="hero-topology" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice">
-          <defs>
-            <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stop-color="#3d9b8f" stop-opacity="0.55" />
-              <stop offset="100%" stop-color="#c4a35a" stop-opacity="0.2" />
-            </linearGradient>
-          </defs>
-          <g class="topo-lines" stroke="url(#lineGrad)" fill="none" stroke-width="1.2">
-            <path d="M40 420 C180 280, 260 520, 400 360 S620 180, 760 300" />
-            <path d="M20 260 C160 140, 300 380, 460 220 S640 80, 790 180" />
-            <path d="M60 520 C220 400, 340 560, 500 440 S700 300, 780 420" />
-          </g>
-          <g class="topo-nodes" fill="#7fd4c8">
-            <circle cx="180" cy="300" r="3.5" />
-            <circle cx="400" cy="360" r="4.5" />
-            <circle cx="460" cy="220" r="3" />
-            <circle cx="620" cy="240" r="3.5" />
-            <circle cx="500" cy="440" r="3" />
-          </g>
-        </svg>
-      </div>
+    <h2 id="about">About Me</h2>
+    <p>
+      I am a Computer Science undergraduate at The Chinese University of Hong Kong,
+      with a strong foundation in mathematics and a growing research focus on multimodal AI.
+      My recent work spans GraphRAG for traffic prediction, branch-and-bound solvers,
+      and improving spatial reasoning in multimodal large language models through self-evolution pipelines.
+    </p>
+    <p>
+      Email: <code>liuaeronix[AT]gmail.com</code> / <code>1155233368[AT]link.cuhk.edu.hk</code><br />
+      GitHub: <a href="https://github.com/Aeronix-Liu">Aeronix-Liu</a>
+    </p>
 
-      <div class="hero-content">
-        <p class="hero-brand">LIU Xinran</p>
-        <h1 class="hero-title">Building multimodal intelligence with structure and rigor.</h1>
-        <p class="hero-lede">
-          Computer Science undergraduate at The Chinese University of Hong Kong —
-          exploring GraphRAG, spatial reasoning for MLLMs, and optimization algorithms.
-        </p>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="https://github.com/Aeronix-Liu" target="_blank" rel="noopener noreferrer">GitHub</a>
-          <a class="btn btn-ghost" href="mailto:liuaeronix@gmail.com">Email Me</a>
-        </div>
-      </div>
-    </section>
+    <h2 id="education">Education</h2>
+    <ul>
+      <li><span class="date">2024/09 – Present</span> <strong>BSc in Computer Science</strong>, The Chinese University of Hong Kong</li>
+      <li><span class="date">2027/02 – 2027/08</span> Exchange semester, ETH Zurich (upcoming)</li>
+      <li><span class="date">2025/07</span> Exchange, Utrecht University (United College GOAL Program)</li>
+      <li><span class="date">2018 – 2024</span> Shenzhen Middle School (Junior &amp; Senior High)</li>
+    </ul>
 
-    <section id="about" class="section">
-      <div class="section-inner">
-        <p class="eyebrow">About</p>
-        <h2>Who I am</h2>
-        <p class="prose">
-          I am a Computer Science student at CUHK with a strong foundation in mathematics
-          and a growing research focus on multimodal AI. My recent work spans GraphRAG for
-          traffic prediction, branch-and-bound solvers, and improving spatial reasoning in
-          multimodal large language models through self-evolution pipelines.
-        </p>
-        <p class="prose">
-          Beyond coursework, I serve as Information Secretary of the United College Mainland
-          Student Association and continue seeking research opportunities at the intersection
-          of machine learning, graphs, and intelligent systems.
-        </p>
-      </div>
-    </section>
+    <h2 id="projects">Projects</h2>
+    <ul>
+      <li>
+        <span class="date">2026/05 – Present</span>
+        <strong>Improve Spatial Reasoning for MLLM via Self-Evolution</strong> — Research intern, CUHK MMLab.
+        A self-evolution pipeline with cold-start SFT to strengthen agentic spatial reasoning; evaluated on VSI-Bench, SPAR-Bench, and MAZE.
+      </li>
+      <li>
+        <span class="date">2026/04 – 2026/05</span>
+        <strong>Linear Optimization Solver &amp; BnB Research</strong>
+        [<a href="https://github.com/Aeronix-Liu/ESTR2520_Research_BnB_Implementation">code</a>].
+        Implemented and compared BFS / DFS branch-and-bound against exhaustive search for binary integer programs.
+      </li>
+      <li>
+        <span class="date">2025/10 – 2025/11</span>
+        <strong>CIFAR-10 Image Classifier</strong> — Course project.
+        A linear image classifier on CIFAR-10.
+      </li>
+      <li>
+        <span class="date">2025/06 – 2025/08</span>
+        <strong>Multimodal GraphRAG for Traffic Prediction</strong> — Summer research.
+        A graph retrieval-augmented generation framework integrating dynamic GNNs and LLMs for spatiotemporal traffic forecasting.
+      </li>
+      <li>
+        <span class="date">2024/10 – 2024/11</span>
+        <strong>Checker Game &amp; Intelligent Robot</strong>
+        [<a href="https://github.com/Aeronix-Liu/ESTR1002-CheckerGame">code</a>].
+        A checkers game with PvP / PvE modes and an AI opponent.
+      </li>
+      <li>
+        <strong>Bayesian Matrix Factorization</strong>
+        [<a href="https://github.com/Aeronix-Liu/ESTR2020_Project_Beyesian_Matrix_Factorization">code</a>] — Course project.
+        Variational inference for movie rating prediction on MovieLens.
+      </li>
+    </ul>
 
-    <section id="education" class="section section-alt">
-      <div class="section-inner">
-        <p class="eyebrow">Education</p>
-        <h2>Academic path</h2>
-        <ul class="timeline">
-          <li>
-            <span class="when">Sep 2024 – Present</span>
-            <div>
-              <h3>BSc. in Computer Science</h3>
-              <p>The Chinese University of Hong Kong</p>
-            </div>
-          </li>
-          <li>
-            <span class="when">Feb 2026 – Jun 2026</span>
-            <div>
-              <h3>Exchange · ETH Zurich</h3>
-              <p>Expected exchange semester</p>
-            </div>
-          </li>
-          <li>
-            <span class="when">Jul 2025</span>
-            <div>
-              <h3>Exchange · Utrecht University</h3>
-              <p>United College GOAL Program</p>
-            </div>
-          </li>
-          <li>
-            <span class="when">2018 – 2024</span>
-            <div>
-              <h3>Shenzhen Middle School</h3>
-              <p>Junior &amp; Senior High</p>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </section>
+    <h2 id="awards">Awards</h2>
+    <ul>
+      <li><span class="date">2026/07</span> Gold Award of CSE Outstanding Academic Performance</li>
+      <li><span class="date">2026/07</span> Dean’s List 2025–26, Faculty of Engineering</li>
+      <li><span class="date">2025/10</span> Pang Ching Cheung Scholarship, United College</li>
+      <li><span class="date">2025/07</span> Dean’s List 2024–25, Faculty of Engineering</li>
+      <li><span class="date">2023/05</span> Outstanding Student Leader in Guangdong Province</li>
+      <li><span class="date">2023/01</span> AMC12 Global Honor Roll of Distinction</li>
+      <li><span class="date">2022/11</span> First Prize, National High School Mathematics Competition (Guangdong)</li>
+    </ul>
 
-    <section id="awards" class="section">
-      <div class="section-inner">
-        <p class="eyebrow">Recognition</p>
-        <h2>Awards &amp; honors</h2>
-        <ul class="award-list">
-          <li>
-            <span class="award-name">Gold Award of CSE Outstanding Academic Performance</span>
-            <span class="award-date">Jul 2026</span>
-          </li>
-          <li>
-            <span class="award-name">Dean’s List 2025–26, Faculty of Engineering</span>
-            <span class="award-date">Jul 2026</span>
-          </li>
-          <li>
-            <span class="award-name">Pang Ching Cheung Scholarship, United College</span>
-            <span class="award-date">Oct 2025</span>
-          </li>
-          <li>
-            <span class="award-name">Dean’s List 2024–25, Faculty of Engineering</span>
-            <span class="award-date">Jul 2025</span>
-          </li>
-          <li>
-            <span class="award-name">Outstanding Student Leader in Guangdong Province</span>
-            <span class="award-date">May 2023</span>
-          </li>
-          <li>
-            <span class="award-name">AMC12 Global Honor Roll of Distinction</span>
-            <span class="award-date">Jan 2023</span>
-          </li>
-          <li>
-            <span class="award-name">First Prize · National High School Mathematics Competition (Guangdong)</span>
-            <span class="award-date">Nov 2022</span>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section id="projects" class="section section-alt">
-      <div class="section-inner">
-        <p class="eyebrow">Work</p>
-        <h2>Selected projects</h2>
-        <div class="project-stack">
-          <article class="project">
-            <div class="project-meta">
-              <span>May 2026 – Sep 2026</span>
-              <span class="tag">Research Intern</span>
-            </div>
-            <h3>Improve Spatial Reasoning for MLLM via Self-Evolution</h3>
-            <p>CUHK MMLab summer intern. Design a self-evolution pipeline with cold-start SFT to strengthen agentic spatial reasoning; evaluate on VSI-Bench, SPAR-Bench, and MAZE.</p>
-          </article>
-
-          <article class="project">
-            <div class="project-meta">
-              <span>Apr 2026 – May 2026</span>
-              <a class="tag link" href="https://github.com/Aeronix-Liu/ESTR2520_Research_BnB_Implementation" target="_blank" rel="noopener noreferrer">GitHub</a>
-            </div>
-            <h3>Linear Optimization Solver &amp; BnB Research</h3>
-            <p>Implement and compare BFS / DFS branch-and-bound against exhaustive search for binary integer programs.</p>
-          </article>
-
-          <article class="project">
-            <div class="project-meta">
-              <span>Jun 2025 – Aug 2025</span>
-              <span class="tag">Summer Research</span>
-            </div>
-            <h3>Multimodal GraphRAG for Traffic Prediction</h3>
-            <p>Graph Retrieval-Augmented Generation framework integrating dynamic GNNs and LLMs for spatiotemporal traffic forecasting.</p>
-          </article>
-
-          <article class="project">
-            <div class="project-meta">
-              <span>Oct 2025 – Nov 2025</span>
-              <span class="tag">Course Project</span>
-            </div>
-            <h3>CIFAR-10 Image Classifier</h3>
-            <p>Built a linear image classifier on CIFAR-10 as a foundational computer-vision exercise.</p>
-          </article>
-
-          <article class="project">
-            <div class="project-meta">
-              <span>Oct 2024 – Nov 2024</span>
-              <a class="tag link" href="https://github.com/Aeronix-Liu/ESTR1002-CheckerGame" target="_blank" rel="noopener noreferrer">GitHub</a>
-            </div>
-            <h3>Checker Game &amp; Intelligent Robot</h3>
-            <p>Developed a checkers game with PvP / PvE modes and a competitive AI opponent.</p>
-          </article>
-
-          <article class="project">
-            <div class="project-meta">
-              <span>Course Project</span>
-              <a class="tag link" href="https://github.com/Aeronix-Liu/ESTR2020_Project_Beyesian_Matrix_Factorization" target="_blank" rel="noopener noreferrer">GitHub</a>
-            </div>
-            <h3>Bayesian Matrix Factorization</h3>
-            <p>Applied variational inference to predict movie ratings on the MovieLens dataset.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="activities" class="section">
-      <div class="section-inner">
-        <p class="eyebrow">Campus</p>
-        <h2>Extracurricular</h2>
-        <ul class="activity-list">
-          <li>
-            <strong>Information Secretary</strong> —
-            United College Mainland Student Association (Mar 2025 – Mar 2026)
-          </li>
-          <li>
-            <strong>A-Helper</strong> —
-            Mainland Undergraduate Association Orientation Camp (Aug 2025)
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section id="contact" class="section section-contact">
-      <div class="section-inner">
-        <p class="eyebrow">Contact</p>
-        <h2>Let’s connect</h2>
-        <p class="prose contact-lede">
-          Open to research collaborations, exchange discussions, and conversations about multimodal AI.
-        </p>
-        <div class="contact-links">
-          <a href="mailto:liuaeronix@gmail.com">liuaeronix@gmail.com</a>
-          <a href="mailto:1155233368@link.cuhk.edu.hk">1155233368@link.cuhk.edu.hk</a>
-          <a href="https://github.com/Aeronix-Liu" target="_blank" rel="noopener noreferrer">github.com/Aeronix-Liu</a>
-        </div>
-      </div>
-    </section>
+    <h2 id="activities">Activities</h2>
+    <ul>
+      <li><span class="date">2025/03 – 2026/03</span> Information Secretary, United College Mainland Student Association</li>
+      <li><span class="date">2025/08</span> A-Helper, Mainland Undergraduate Association Orientation Camp</li>
+    </ul>
   </main>
 
-  <footer class="footer">
-    <p>© <span id="year"></span> LIU Xinran · Built for academic &amp; research outreach</p>
+  <footer>
+    <hr />
+    © LIU Xinran 2026 | <a href="https://github.com/Aeronix-Liu">GitHub</a>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
